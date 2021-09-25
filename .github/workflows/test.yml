@@ -4,15 +4,12 @@ on: [push]
 jobs:
   TEST:
     runs-on : ubuntu-latest
-    enviroment:
-      name: Test
     steps:
-      - name: Create_r
       - uses: actions/checkout@v2
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          echo ${{ env.SEC123 }} > index.html
+          echo ${{ env.SEC }} > index.html
           mv index.html /tmp
       - uses: actions/checkout@v2
         with:
