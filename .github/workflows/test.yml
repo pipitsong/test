@@ -5,7 +5,7 @@ jobs:
   TEST:
     runs-on : ubuntu-latest
     enviroment:
-        name: Test
+      name: Test
     steps:
       - name: Create_r
       - uses: actions/checkout@v2
