@@ -22,3 +22,4 @@ jobs:
           git add --all
           git commit -m "add to gh-pages"
           git push
+          
