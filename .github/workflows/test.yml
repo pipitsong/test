@@ -4,9 +4,10 @@ on: [push]
 jobs:
   TEST:
     runs-on : ubuntu-latest
-    steps:
-      enviroment:
+    enviroment:
         name: Test
+    steps:
+      - name: Create_r
       - uses: actions/checkout@v2
       - run: |
           git config user.name github-actions
