@@ -11,6 +11,10 @@ jobs:
           git config user.email github-actions@github.com
           echo "HIIII" > index.html
           mv index.html /tmp
+      - uses: actions/checkout@v2
+          with:
+            ref: my-branch
+      - run: |
           git checkout gh-pages
           mv /tmp/index.html .
           git add --all
