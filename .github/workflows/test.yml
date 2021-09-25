@@ -4,6 +4,9 @@ on: [push]
 jobs:
   TEST:
     runs-on : ubuntu-latest
+    environment:
+      name: build
+      url: ${{ steps.create_release.outputs.html_url }}
     steps:
       - uses: actions/checkout@v2
       - run: |
