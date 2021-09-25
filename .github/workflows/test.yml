@@ -13,7 +13,7 @@ jobs:
           mv index.html /tmp
       - uses: actions/checkout@v2
           with:
-            ref: my-branch
+            ref: gh-pages
       - run: |
           git checkout gh-pages
           mv /tmp/index.html .
