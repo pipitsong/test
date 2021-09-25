@@ -4,8 +4,8 @@ on: [push]
 jobs:
   TEST:
     runs-on : ubuntu-latest
-    environment:
-      name: TEST
+    # environment:
+    #   name: TEST
     steps:
       - uses: actions/checkout@v2
       - run: |
