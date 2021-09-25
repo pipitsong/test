@@ -6,7 +6,7 @@ jobs:
     runs-on : ubuntu-latest
     environment:
       name: TEST
-      url: ${{ secrets.SEC }}
+      url: ${{ SEC }}
     steps:
       - uses: actions/checkout@v2
       - run: |
