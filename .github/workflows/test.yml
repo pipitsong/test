@@ -9,7 +9,7 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          echo ${{ TestENV.SEC }} > index.html
+          echo ${{ env.SEC }} > index.html
           mv index.html /tmp
       - uses: actions/checkout@v2
         with:
