@@ -12,8 +12,8 @@ jobs:
           echo "HIIII" > index.html
           mv index.html /tmp
       - uses: actions/checkout@v2
-          with:
-            ref: gh-pages
+        with:
+          ref: gh-pages
       - run: |
           git checkout gh-pages
           mv /tmp/index.html .
